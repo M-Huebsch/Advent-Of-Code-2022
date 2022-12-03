@@ -15,7 +15,7 @@ sheet1 = {
 }
 
 score1 = 0
-with open("Day2/input.txt", "r") as file:
+with open("Day02/input.txt", "r") as file:
     for line in file:
         line = line.strip()
         score1 = score1 + sheet1[line]
@@ -36,7 +36,7 @@ sheet2 = {
 }
 
 score2 = 0
-with open("Day2/input.txt", "r") as file:
+with open("Day02/input.txt", "r") as file:
     for line in file:
         line = line.strip()
         score2 = score2 + sheet2[line]
