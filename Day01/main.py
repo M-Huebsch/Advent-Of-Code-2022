@@ -2,7 +2,7 @@
 # Liste lesen, Absätze zusammenrechnen, Max suchen
 
 numbers = []
-with open("Day1/input.txt", "r") as file:
+with open("Day01/input.txt", "r") as file:
     for line in file:
         line = line.rstrip("\n")
         numbers.append(line)
