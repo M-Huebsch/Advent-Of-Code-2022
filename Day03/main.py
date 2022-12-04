@@ -1,6 +1,8 @@
 # Advent of Code Day3
 # Liste einlesen, Zeichen in Zeile 50/50 splitten, welches Zeichen doppelt, Zahlenwert der Zeichen berechnen
 
+import string
+
 length = 0
 buchstaben = []
 werte = 0
@@ -15,11 +17,6 @@ with open("Day03/input.txt", "r") as file:
                 break
             
 for letter in buchstaben:
-    if letter.islower():
-        werte = werte + ord(letter) - 96
-    else:
-        werte = werte + ord(letter) - 38
+    werte += string.ascii_letters.index(letter) + 1
 
 print (werte)
-
-
